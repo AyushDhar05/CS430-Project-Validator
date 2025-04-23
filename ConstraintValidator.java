@@ -170,10 +170,10 @@ public class ConstraintValidator {
                                        + "'s time interval [" + job.r + ", " + job.d + "].");
                     valid = false;
                 }
-                if (scheduled[jobId - 1]) {
-                    System.out.println("Job " + jobId + " is scheduled more than once.");
-                    valid = false;
-                }
+                // if (scheduled[jobId - 1]) {
+                //     System.out.println("Job " + jobId + " is scheduled more than once.");
+                //     valid = false;
+                // }
                 scheduled[jobId - 1] = true;
             }
         }
